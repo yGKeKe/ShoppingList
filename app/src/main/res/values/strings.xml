@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name"><b>ShoppingList</b></string>
+    <string name="btnAddEntry">Add Entry</string>
+    <string name="tvShoppingList"><b>Shopping List</b></string>
+    <string name="btnSearchByStore">Display by Store</string>
+    <string name="hintStoreName">Store Name</string>
+    <string name="hintItemName">Item Name</string>
+    <string name="hintQuantity">Quantity</string>
+    <string name="tvStore"><u><b>Store</b></u></string>
+    <string name="tvItem"><u><b>Item</b></u></string>
+    <string name="btnDecrement"><b>Less</b></string>
+    <string name="btnIncrement"><b>More</b></string>
+    <string name="btnSubmitEdit"><b>Submit Edit</b></string>
+    <string name="tvQuantity"><u><b>Quantity</b></u></string>
+</resources>
