@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name"><b>ShoppingList</b></string>
+    <string name="app_name"><b>Shopping List</b></string>
     <string name="btnAddEntry">Add Entry</string>
     <string name="tvShoppingList"><b>Shopping List</b></string>
     <string name="btnSearchByStore">Display by Store</string>

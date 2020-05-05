@@ -6,20 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tvShoppingList"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="6dp"
-        android:text="@string/tvShoppingList"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="50sp"
-        app:layout_constraintBottom_toTopOf="@+id/flItemListContainer"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ScrollView
             android:id="@+id/flItemListContainer"
             android:layout_width="0dp"
@@ -28,7 +14,7 @@
             app:layout_constraintBottom_toTopOf="@+id/btnAddEntry"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvShoppingList">
+            app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
                 android:id="@+id/llItemList"

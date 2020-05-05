@@ -6,27 +6,18 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tvShoppingList"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/tvShoppingList"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="50sp"
-        tools:layout_editor_absoluteX="50dp" />
-
-    <TextView
         android:id="@+id/tvItem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
         android:text="@string/tvItem"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="@+id/tvShoppingList"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="@+id/tvShoppingList"
-        tools:layout_editor_absoluteY="139dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editItemName"
@@ -34,8 +25,8 @@
         android:layout_height="wrap_content"
         android:hint="@string/hintItemName"
         android:inputType="text"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="180dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="142dp" />
 
     <TextView
         android:id="@+id/tvStore"
@@ -46,9 +37,9 @@
         android:textColor="#000000"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="@+id/tvItem"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tvItem"
-        tools:layout_editor_absoluteY="241dp" />
+        tools:layout_editor_absoluteY="210dp" />
 
     <EditText
         android:id="@+id/editStoreName"
@@ -56,8 +47,8 @@
         android:layout_height="wrap_content"
         android:hint="@string/hintStoreName"
         android:inputType="text"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="293dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="266dp" />
 
     <TextView
         android:id="@+id/tvQuantity"
@@ -70,27 +61,31 @@
         app:layout_constraintEnd_toEndOf="@+id/tvItem"
         app:layout_constraintHorizontal_bias="0.42"
         app:layout_constraintStart_toStartOf="@+id/tvItem"
-        tools:layout_editor_absoluteY="345dp" />
+        tools:layout_editor_absoluteY="322dp" />
 
     <Button
         android:id="@+id/btnDecrement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/button_decrement"
-        android:text="@string/btnDecrement"
         android:onClick="btnDecrement"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="393dp" />
+        android:text="@string/btnDecrement"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editStoreName" />
 
     <Button
         android:id="@+id/btnIncrement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="84dp"
         android:background="@drawable/button_increment"
-        android:text="@string/btnIncrement"
         android:onClick="btnIncrement"
-        tools:layout_editor_absoluteX="258dp"
-        tools:layout_editor_absoluteY="393dp" />
+        android:text="@string/btnIncrement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editStoreName" />
 
     <EditText
         android:id="@+id/editQuantity"
@@ -102,6 +97,7 @@
         android:hint="@string/hintQuantity"
         android:inputType="text"
         app:layout_constraintEnd_toStartOf="@+id/btnIncrement"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toEndOf="@+id/btnDecrement"
         app:layout_constraintTop_toBottomOf="@+id/tvQuantity" />
 
@@ -109,9 +105,14 @@
         android:id="@+id/btnSubmitEdit"
         android:layout_width="106dp"
         android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="8dp"
         android:background="@drawable/button_background"
-        android:text="@string/btnSubmitEdit"
         android:onClick="btnSubmitEdit"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="585dp" />
+        android:text="@string/btnSubmitEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editQuantity" />
 </androidx.constraintlayout.widget.ConstraintLayout>
