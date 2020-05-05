@@ -23,7 +23,7 @@ public class add_item extends AppCompatActivity {
     }
 
     public void btnAddEntry(View v){
-        DatabaseManager DBM = new DatabaseManager(this);
+        database_manager DBM = new database_manager(this);
         String strItem = etItem.getText().toString();
         String strStore = etStore.getText().toString();
         int intQuantity = Integer.parseInt(etQuantity.getText().toString());

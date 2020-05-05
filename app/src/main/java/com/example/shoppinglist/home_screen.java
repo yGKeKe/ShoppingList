@@ -30,7 +30,7 @@ public class home_screen extends AppCompatActivity {
 
     private void populateItemList(){
         llItemList.removeAllViews();
-        DatabaseManager DBM = new DatabaseManager(this);
+        database_manager DBM = new database_manager(this);
         ArrayList<String> alItemList = DBM.getAllItems();
         for(String s : alItemList){
             TextView tvItem = tvItemGenerator(s);
@@ -45,7 +45,7 @@ public class home_screen extends AppCompatActivity {
 
     private void populateItemListByStore(String strSelectedStore){
         llItemList.removeAllViews();
-        DatabaseManager DBM = new DatabaseManager(this);
+        database_manager DBM = new database_manager(this);
         ArrayList<String> alItemList = DBM.getItemsByStore(strSelectedStore);
         for(String s : alItemList){
             TextView tvItem = tvItemGenerator(s);
@@ -73,7 +73,7 @@ public class home_screen extends AppCompatActivity {
 
     public void btnDisplayByStore(View v){
         PopupMenu puStoreSelect = new PopupMenu(home_screen.this, findViewById(R.id.btnSearchByStore));
-        DatabaseManager DBM = new DatabaseManager(this);
+        database_manager DBM = new database_manager(this);
         ArrayList<String> alStores = DBM.getStores();
         for(int i = 0; i < alStores.size(); i++){
             MenuItem item = puStoreSelect.getMenu().add(alStores.get(i));

@@ -6,9 +6,9 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
 
-public class DatabaseManager extends SQLiteOpenHelper {
+public class database_manager extends SQLiteOpenHelper {
 
-    public DatabaseManager(Context context){
+    public database_manager(Context context){
         super(context, "Shopping List", null, 1);
     }
 

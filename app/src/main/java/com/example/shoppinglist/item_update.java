@@ -19,7 +19,7 @@ public class item_update extends AppCompatActivity {
         initFields();
         Intent intentItem = getIntent();
         String sIntentItem = intentItem.getStringExtra("ITEM");
-        DatabaseManager DBM = new DatabaseManager(this);
+        database_manager DBM = new database_manager(this);
         alItems = DBM.getItem(sIntentItem);
         String strStore = alItems.get(0);
         String strItem = alItems.get(1);
@@ -55,7 +55,7 @@ public class item_update extends AppCompatActivity {
         String strStore = etStore.getText().toString();
         String strItem = etItem.getText().toString();
         int intQuantity = Integer.parseInt(etQuantity.getText().toString());
-        DatabaseManager DBM = new DatabaseManager(this);
+        database_manager DBM = new database_manager(this);
         DBM.updateByItem(strStore, strItem, intQuantity);
         finish();
     }
